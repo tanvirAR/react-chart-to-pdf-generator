@@ -15,27 +15,27 @@ export default function CaseType(props: props) {
   const thisCompRef = useRef(null);
 
 
- useEffect(() => {
-    // Function to handle when clicks outside the popup to hide this component
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        thisCompRef.current &&
-        (thisCompRef.current as HTMLElement).contains(event.target as Node)
-      ) {
-        // this div will close upon clicking outside but user can also clik on button which is also outside, so ref of that button is used here
-        if (toggleButtonRef.current === event.target) {
-          setShowComponent(true);
-        } else {
-          setShowComponent(false);
-        }
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
+ // useEffect(() => {
+ //    // Function to handle when clicks outside the popup to hide this component
+ //    const handleClickOutside = (event: MouseEvent) => {
+ //      if (
+ //        thisCompRef.current &&
+ //        (thisCompRef.current as HTMLElement).contains(event.target as Node)
+ //      ) {
+ //        // this div will close upon clicking outside but user can also clik on button which is also outside, so ref of that button is used here
+ //        if (toggleButtonRef.current === event.target) {
+ //          setShowComponent(true);
+ //        } else {
+ //          setShowComponent(false);
+ //        }
+ //      }
+ //    };
+ //    document.addEventListener("mousedown", handleClickOutside);
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [setShowComponent, toggleButtonRef]);
+ //    return () => {
+ //      document.removeEventListener("mousedown", handleClickOutside);
+ //    };
+ //  }, [setShowComponent, toggleButtonRef]);
   
 
 
