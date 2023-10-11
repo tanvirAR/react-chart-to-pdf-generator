@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+
+.border {
+    background: linear-gradient(to right, #0a53db, #0fc2f8);
+    height: 5px;
+    width: 95%;
+}
+
+.footer .contents {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.footer .contents :nth-child(1) {
+    color: #0a5edb;
+}
+
+.footer .contents span {
+    color: #4264fd;
+}

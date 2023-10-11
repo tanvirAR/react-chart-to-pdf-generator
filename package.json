@@ -12,8 +12,12 @@
     "@types/node": "20.8.4",
     "@types/react": "18.2.27",
     "@types/react-dom": "18.2.12",
+    "chart.js": "^4.4.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "next": "13.5.4",
     "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"
   }

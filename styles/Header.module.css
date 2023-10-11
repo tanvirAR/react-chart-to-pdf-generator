@@ -1,0 +1,25 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 55px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.header :nth-child(2) {
+    font-weight: 600;
+}
+
+.headerContainer .border {
+    background: linear-gradient(to right, #0a53db, #0fc2f8);
+    height: 5px;
+    width: 100%;
+}
