@@ -20,7 +20,7 @@ export default function CaseType(props: props) {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         thisCompRef.current &&
-        !thisCompRef.current.contains(event.target as Node)
+        (thisCompRef.current as HTMLElement).contains(event.target as Node)
       ) {
         // this div will close upon clicking outside but user can also clik on button which is also outside, so ref of that button is used here
         if (toggleButtonRef.current === event.target) {
